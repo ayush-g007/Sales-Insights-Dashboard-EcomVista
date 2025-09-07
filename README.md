@@ -1,7 +1,6 @@
 # Sales Insights for EcomVista
 
-A complete, portfolio-ready analytics project that centralizes fragmented ecommerce sales data,
-builds actionable KPIs with SQL, and visualizes insights in Tableau.
+A complete project that centralizes fragmented ecommerce sales data, builds actionable KPIs with SQL, and visualizes insights in Tableau.
 
 ## What's Inside
 - **data/**: Synthetic datasets (CSV) for regions, products, customers, calendar, and sales.
@@ -13,7 +12,7 @@ builds actionable KPIs with SQL, and visualizes insights in Tableau.
 ## Quickstart
 
 ### Option A: Use the SQLite DB (fastest)
-1. Open your SQL client and connect to `ecomvista.db` (SQLite).
+1. Open SQL client and connect to `ecomvista.db` (SQLite).
 2. Explore views (start with `v_sales_enriched`, `v_kpi_by_date`, `v_top_products`, `v_region_performance`).
 3. Run queries from `sql/kpi_queries.sql`.
 
@@ -27,7 +26,7 @@ builds actionable KPIs with SQL, and visualizes insights in Tableau.
 ### Build the Tableau Dashboard
 1. Open Tableau Desktop.
 2. Connect to **SQLite** and select `ecomvista.db` (or connect to the CSVs in `data/`).
-3. Use the view **`v_sales_enriched`** as your primary data source.
+3. Use the view **`v_sales_enriched`** as primary data source.
 4. Recreate the following **KPI tiles** and **charts** (see `tableau/dashboard_instructions.md`):
    - KPI: Total Net Sales, Total Gross Profit, Profit Margin %, Orders, Units Sold
    - Charts: Sales Trend by Month, Top Products, Region Performance, Seasonality, Demographics
